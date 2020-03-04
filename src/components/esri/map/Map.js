@@ -1,0 +1,32 @@
+// React imports
+import React from "react";
+// import Legend from "./Leg"
+
+// ESRI ArcGIS API
+import { loadMap } from "../../../utils/map";
+
+// Styled Components
+import styled from "styled-components";
+
+const Container = styled.div`
+  height: 100%;
+  width: 100%;
+`;
+
+// Component
+const Map = props => {
+  // set an ID for the map to attach to
+  const containerID = "map-view-container";
+
+  // load map with config properties
+  loadMap(containerID, props.mapConfig).then(() => {
+    // call the map loaded event when we get the map view back
+    props.onMapLoaded();
+  });
+
+  // Compnent template
+  return <Container id={containerID}>
+  </Container>
+};
+
+export default Map;

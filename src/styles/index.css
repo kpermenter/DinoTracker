@@ -1,0 +1,26 @@
+    html,
+    body{
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: calc(100% - 205px);
+      overflow: hidden;
+    }
+
+    #legendDiv {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 500;
+    }
+
