@@ -9,7 +9,9 @@ import { mapLoaded } from "../redux/reducers/map";
 import Map from "./esri/map/Map";
 import LoadScreen from "./LoadScreen";
 import Nav from "./Nav";
-import Legend from "./esri/map/Leg"
+import Test from "./LegendPop";
+
+import "../styles/index.css"
 
 // Styled Components
 import styled from "styled-components";
@@ -32,16 +34,8 @@ const MapWrapper = styled.div`
   overflow: hidden;
 `;
 
-// const LegendWrapper = styled.div`
-// display: flex;
-// flex: 2;
-// flex-direction: column;
-// position: relative;
-// overflow: hidden;
-// `;
-
 const LegendWrapper = styled.div`
-  justify-content: center;
+  justify-content: right;
   & img {
     height: 55px;
   }
@@ -57,10 +51,12 @@ const Main = props => {
       <LoadScreen isLoading={!isMapLoaded} />
       <Nav>
       </Nav>
-  <LegendWrapper><Legend></Legend></LegendWrapper>
       <MapWrapper>
         <Map onMapLoaded={mapLoaded} mapConfig={config.mapConfig} />
-      </MapWrapper>
+
+        {/* <LegendWrapper><Legend></Legend></LegendWrapper> */}
+        </MapWrapper>
+    <Test></Test>
     </Container>
   );
 };

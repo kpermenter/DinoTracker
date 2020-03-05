@@ -1,6 +1,6 @@
 // React imports
 import React from "react";
-// import Legend from "./Leg"
+import Legend from "./Leg"
 
 // ESRI ArcGIS API
 import { loadMap } from "../../../utils/map";

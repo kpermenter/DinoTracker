@@ -4,7 +4,7 @@ import Img from "./legend.png"
 export default class Legend extends React.Component {
   render() {
     return (
-          <img src={Img}/>
+          <img src={Img} style={{width: 200}}/>
           
     );
   }
