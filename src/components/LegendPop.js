@@ -22,7 +22,7 @@ componentWillUnmount() {
 }
 
 openNav() {
-    const style = { width : 350 };
+    const style = { width : 270 };
     this.setState({ style });
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     document.addEventListener("click", this.closeNav);
@@ -38,7 +38,7 @@ closeNav() {
 render() {
     return (
       <div>
-<span style={{fontSize:30,cursor:"pointer"}} onClick={this.openNav}>&#9776; Legend</span>
+<button className="legendClick" style={{fontSize:20,cursor:"pointer"}} onClick={this.openNav}>&#9776; Legend</button>
         <div
             ref       = "snav"
             className = "overlay"
@@ -46,8 +46,10 @@ render() {
         >
             <div className = "sidenav-container">
                 <div className = "text-center">
-                  <h2></h2>
-                  <p></p>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <p>Geological Time</p>
                 </div>
                 <a
                     href      = "javascript:void(0)"

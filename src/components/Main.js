@@ -34,13 +34,6 @@ const MapWrapper = styled.div`
   overflow: hidden;
 `;
 
-const LegendWrapper = styled.div`
-  justify-content: right;
-  & img {
-    height: 55px;
-  }
-`;
-
 // Component definition
 const Main = props => {
   const config = useSelector(state => state.config);
@@ -53,8 +46,6 @@ const Main = props => {
       </Nav>
       <MapWrapper>
         <Map onMapLoaded={mapLoaded} mapConfig={config.mapConfig} />
-
-        {/* <LegendWrapper><Legend></Legend></LegendWrapper> */}
         </MapWrapper>
     <Test></Test>
     </Container>

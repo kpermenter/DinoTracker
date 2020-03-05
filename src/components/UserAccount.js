@@ -26,10 +26,10 @@ const UserAccount = props => {
         <ArcgisAccountMenuItem
           onClick={() => console.log("Profile & Settings clicked")}
         >
-          More Fossil Maps
+          {/* My Profile */}
         </ArcgisAccountMenuItem>
         <ArcgisAccountMenuItem onClick={() => console.log("My Esri clicked")}>
-          My Esri
+          {/* My Esri */}
         </ArcgisAccountMenuItem>
         <ArcgisAccountMenuItem onClick={() => console.log("Training clicked")}>
           {/* Training */}

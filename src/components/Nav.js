@@ -59,15 +59,15 @@ const Navbar = props => {
   return (
       <Nav>
         <Logo href="#" src={logo} />
-        <TopNavTitle href="#">Worldwide Historic Fossil Sites</TopNavTitle>
+        <TopNavTitle>Worldwide Historic Fossil Sites</TopNavTitle>
         <NavList>
-          <TopNavLink href="https://github.com/Esri/esri-react-boot">
+          <TopNavLink href="">
             {/*  */}
           </TopNavLink>
-          <TopNavLink href="https://github.com/Esri/esri-react-boot/wiki">
+          <TopNavLink href="">
             {/* */}
           </TopNavLink>
-          <TopNavLink href="https://calcite-react.netlify.com/">
+          <TopNavLink href="">
             {/* */}
           </TopNavLink>
         </NavList>

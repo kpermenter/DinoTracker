@@ -1,6 +1,6 @@
 // React imports
 import React from "react";
-import Legend from "./Leg"
+
 
 // ESRI ArcGIS API
 import { loadMap } from "../../../utils/map";
@@ -24,7 +24,7 @@ const Map = props => {
     props.onMapLoaded();
   });
 
-  // Compnent template
+  // Comopnent template
   return <Container id={containerID}>
   </Container>
 };
