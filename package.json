@@ -2,6 +2,7 @@
   "name": "react-jsapi-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "main": "app.js",
   "scripts": {
     "start": "react-scripts start",
