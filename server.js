@@ -2,6 +2,8 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
+require('dotenv').config();
+require('./public/config.json').config();
 
 const app = express();
 

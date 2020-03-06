@@ -1,9 +1,9 @@
 {
-  "name": "react-jsapi-app",
+  "name": "dino-tracker-app",
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

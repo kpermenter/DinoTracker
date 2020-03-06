@@ -18,7 +18,8 @@ export function signIn(options) {
     clientId,
     portalUrl,
     popup,
-    redirectUri: `${window.location.origin}/auth`
+    redirectUri: `${window.location.origin}`
+    // redirectUri: `${window.location.origin}/auth`
   }); // TODO can use .then to complete auth here and save an update cycle?
 }
 
