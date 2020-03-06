@@ -23,7 +23,7 @@ const Map = props => {
     props.onMapLoaded();
   });
 
-  // Comopnent template
+  // Component template
   return <Container id={containerID}>
   </Container>
 };

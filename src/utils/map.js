@@ -1,9 +1,9 @@
 import { loadModules } from "esri-loader";
 
 export function loadMap(element, mapOptions) {
-  return loadModules(["esri/views/SceneView", "esri/WebScene", "esri/widgets/Search"], {
+  return loadModules(["esri/views/SceneView", "esri/WebScene", "esri/widgets/Search", "esri/widgets/Legend", "esri/widgets/Expand"], {
     css: true
-  }).then(([SceneView, WebScene, Search]) => {
+  }).then(([SceneView, WebScene, Search, Legend, Expand]) => {
     if (!element) {
       // component or app was likely destroyed
       return;
@@ -24,12 +24,22 @@ export function loadMap(element, mapOptions) {
       center: [-87, 34]
     });
 
+    const legend = new Expand({
+      content: new Legend({
+        view: view,
+        style: "card" // other styles include 'classic'
+      }),
+      view: view,
+      expanded: true
+    });
+    view.ui.add(legend, "bottom-left");
+  
     var searchWidget = new Search({
-      view: view
+      view: view,
     });
 
     view.ui.add(searchWidget, {
-      position: "top-right"
+      position: "top-right",
     });
 
 
