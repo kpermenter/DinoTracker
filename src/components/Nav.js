@@ -8,9 +8,9 @@ import TopNavTitle from "calcite-react/TopNav/TopNavTitle";
 import TopNavList from "calcite-react/TopNav/TopNavList";
 import TopNavLink from "calcite-react/TopNav/TopNavLink";
 import logo from "../styles/images/logo.png";
-import UserAccount from "./UserAccount"
+// import UserAccount from "./UserAccount"
 import { useSelector, useDispatch } from "react-redux";
-import { startAuth, logout } from "../redux/reducers/auth";
+// import { startAuth, logout } from "../redux/reducers/auth";
 
 // Styled Components
 import styled from "styled-components";
@@ -34,27 +34,27 @@ const NavList = styled(TopNavList)`
 
 // Component definition
 const Navbar = props => {
-  const auth = useSelector(state => state.auth);
-  const config = useSelector(state => state.config);
-  const dispatch = useDispatch();
+  // const auth = useSelector(state => state.auth);
+  // const config = useSelector(state => state.config);
+  // const dispatch = useDispatch();
 
 //   Sign in button click event
-  const signIn = () => {
-    const { clientId, sessionId, popup } = config;
-    dispatch(
-      startAuth({
-        clientId,
-        sessionId,
-        popup,
-        signInRequest: true
-      })
-    );
-  };
+  // const signIn = () => {
+  //   const { clientId, sessionId, popup } = config;
+  //   dispatch(
+  //     startAuth({
+  //       clientId,
+  //       sessionId,
+  //       popup,
+  //       signInRequest: true
+  //     })
+  //   );
+  // };
 
 //   Sign out button click event
-  const signOut = () => {
-    dispatch(logout(config.sessionId));
-  };
+  // const signOut = () => {
+  //   dispatch(logout(config.sessionId));
+  // };
 
   return (
       <Nav>
@@ -71,14 +71,14 @@ const Navbar = props => {
             {/* */}
           </TopNavLink>
         </NavList>
-        <UserAccount
+        {/* <UserAccount
           user={auth.user}
           portal={auth.portal}
           token={auth.token}
           loggedIn={auth.loggedIn}
           signIn={signIn}
           signOut={signOut}
-        />
+        /> */}
       </Nav>
   )};
 
