@@ -27,7 +27,7 @@ export function signIn(options) {
  */
 export async function completeSignIn(options) {
   const {
-    portalUrl = "https://www.arcgis.com/",
+    portalUrl,
     clientId,
     sessionId = `${portalUrl}_session`
   } = options;
