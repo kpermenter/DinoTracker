@@ -1,18 +1,13 @@
 import { loadModules } from "esri-loader";
 
 export function loadMap(element, mapOptions) {
-  return loadModules(["esri/Map", "esri/views/MapView", "esri/views/SceneView", "esri/layers/Layer", "esri/WebScene"], {
+  return loadModules(["esri/views/SceneView", "esri/WebScene", "esri/widgets/Search"], {
     css: true
-  }).then(([Map, MapView, SceneView, Layer, WebScene]) => {
+  }).then(([SceneView, WebScene, Search]) => {
     if (!element) {
       // component or app was likely destroyed
       return;
     }
-    // create the Map
-    // const map = new Map(mapOptions);
-    // const map = new Map({
-    //   basemap: "dark-gray"
-    // });
 
     const map = new WebScene({
       portalItem: {
@@ -28,6 +23,15 @@ export function loadMap(element, mapOptions) {
       zoom: 7,
       center: [-87, 34]
     });
+
+    var searchWidget = new Search({
+      view: view
+    });
+
+    view.ui.add(searchWidget, {
+      position: "top-right"
+    });
+
 
     // wait for the view to load TODO: may not need this?
     return view.when(() => {

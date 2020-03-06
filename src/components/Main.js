@@ -10,7 +10,6 @@ import Map from "./esri/map/Map";
 import LoadScreen from "./LoadScreen";
 import Nav from "./Nav";
 import Test from "./LegendPop";
-
 import "../styles/index.css"
 
 // Styled Components

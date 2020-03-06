@@ -14,6 +14,7 @@ import { startAuth, logout } from "../redux/reducers/auth";
 
 // Styled Components
 import styled from "styled-components";
+import "../styles/index.css"
 
 const Logo = styled(TopNavBrand)`
   justify-content: center;
