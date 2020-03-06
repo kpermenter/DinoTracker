@@ -8,7 +8,7 @@ import TopNavTitle from "calcite-react/TopNav/TopNavTitle";
 import TopNavList from "calcite-react/TopNav/TopNavList";
 import TopNavLink from "calcite-react/TopNav/TopNavLink";
 import logo from "../styles/images/logo.png";
-import UserAccount from "./UserAccount"
+// import UserAccount from "./UserAccount"
 import { useSelector, useDispatch } from "react-redux";
 import { startAuth, logout } from "../redux/reducers/auth";
 
