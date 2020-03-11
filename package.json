@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -18,7 +18,6 @@
     "@esri/arcgis-rest-auth": "^2.6.1",
     "@esri/arcgis-rest-portal": "^2.6.1",
     "@esri/arcgis-rest-request": "^2.6.1",
-    "@esri/react-arcgis": "^5.0.0",
     "arcgis-react-redux-legend": "^3.0.0",
     "calcite-react": "^0.44.0",
     "cra-build-watch": "^3.2.0",
